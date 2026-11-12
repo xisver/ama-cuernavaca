@@ -1,0 +1,759 @@
+@media (min-width: 1500px) {
+  .hero {
+    padding-block: 80px;
+  }
+  .hero-visual {
+    height: 560px;
+  }
+}
+@media (max-width: 1150px) {
+  .container {
+    width: calc(100% - 64px);
+  }
+  .main-nav {
+    gap: 21px;
+  }
+  .brand > span {
+    display: none;
+  }
+  .hero {
+    gap: 25px;
+  }
+  .hero-actions {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .hero-actions .button {
+    padding-inline: 17px;
+  }
+  .hero-visual {
+    height: 490px;
+  }
+  .hero h1 {
+    font-size: 68px;
+  }
+  .hero-description {
+    font-size: 13px;
+  }
+  .course-card {
+    padding: 23px 20px;
+  }
+  .course-card h3 {
+    font-size: 22px;
+  }
+  .about-grid {
+    gap: 65px;
+  }
+  .contact-grid {
+    gap: 45px;
+  }
+  .contact-actions {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .course-description {
+    min-height: 60px;
+  }
+  .footer-main > div {
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .header-inner {
+    min-height: 80px;
+  }
+  .brand > span {
+    display: block;
+  }
+  .header-phone {
+    margin-left: auto;
+  }
+  .menu-toggle {
+    display: grid;
+    place-items: center;
+    border: 1px solid #ced5c3;
+    border-radius: 5px;
+    background: transparent;
+    width: 41px;
+    height: 41px;
+  }
+  .menu-toggle .icon {
+    width: 21px;
+  }
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    padding: 20px 32px 26px;
+    box-shadow: 0 15px 20px #213b3012;
+    border-bottom: 1px solid var(--line);
+  }
+  .main-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+  .main-nav > a {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  .main-nav > a:after {
+    display: none;
+  }
+  .main-nav .mobile-contact {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    border-top: 1px solid var(--line);
+    margin-top: 10px;
+    padding-top: 22px;
+  }
+  .hero .eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+  .hero h1 {
+    font-size: 62px;
+    letter-spacing: -3px;
+  }
+  .hero-visual {
+    height: 465px;
+  }
+  .hero {
+    padding-block: 45px;
+    gap: 30px;
+  }
+  .hero-actions {
+    gap: 16px;
+  }
+  .hero-description {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+  .hero-note {
+    font-size: 9px;
+    margin-top: 20px;
+  }
+  .photo-caption {
+    padding: 14px;
+    font-size: 10px;
+    left: -20px;
+    bottom: 55px;
+    gap: 9px;
+  }
+  .caption-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .photo-index {
+    font-size: 6px;
+  }
+  .experience-badge {
+    width: 100px;
+    height: 100px;
+    right: -9px;
+  }
+  .experience-badge strong {
+    font-size: 34px;
+  }
+  .experience-badge > span {
+    font-size: 6px;
+  }
+  .benefits-inner {
+    padding-block: 23px;
+  }
+  .benefits-inner > div {
+    gap: 10px;
+  }
+  .benefits-inner strong {
+    font-size: 10px;
+  }
+  .benefits-inner span span {
+    font-size: 9px;
+  }
+  .benefits-inner > div > .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .course-card {
+    padding: 22px 17px;
+  }
+  .course-grid {
+    gap: 14px;
+  }
+  .course-card h3 {
+    font-size: 20px;
+  }
+  .course-card .course-tagline {
+    font-size: 9px;
+  }
+  .course-duration strong {
+    font-size: 12px;
+  }
+  .course-duration span {
+    font-size: 8px;
+  }
+  .course-card li {
+    font-size: 9px;
+  }
+  .course-label {
+    font-size: 6px;
+    padding-inline: 8px;
+  }
+  .course-description {
+    font-size: 10px;
+    min-height: 55px;
+  }
+  .section {
+    padding-block: 70px;
+  }
+  .about-grid {
+    gap: 50px;
+  }
+  .about-visual > img {
+    height: 370px;
+  }
+  .about-copy h2 {
+    font-size: 36px;
+  }
+  .about-copy > .eyebrow {
+    font-size: 7px;
+  }
+  .about-copy > p:not(.eyebrow) {
+    font-size: 11px;
+  }
+  .steps-grid {
+    gap: 30px;
+  }
+  .contact-copy h2 {
+    font-size: 46px;
+  }
+  .location-card {
+    padding: 25px;
+  }
+  .contact-grid {
+    gap: 35px;
+  }
+  .footer-brand span {
+    font-size: 9px;
+  }
+  .footer-main > div {
+    gap: 18px;
+    font-size: 9px;
+  }
+}
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 94px;
+  }
+  .container {
+    width: calc(100% - 40px);
+  }
+  .header-inner {
+    min-height: 72px;
+    gap: 15px;
+  }
+  .brand {
+    gap: 5px;
+  }
+  .brand img {
+    width: 68px;
+    height: 45px;
+  }
+  .brand > span {
+    font-size: 7px;
+    padding-left: 9px;
+    letter-spacing: 0.8px;
+  }
+  .brand > span > span {
+    font-size: 6px;
+    letter-spacing: 1.7px;
+  }
+  .header-phone {
+    font-size: 11px;
+    gap: 5px;
+  }
+  .header-phone .icon {
+    width: 15px;
+  }
+  .menu-toggle {
+    height: 36px;
+    width: 36px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-top: 33px;
+    padding-bottom: 35px;
+  }
+  .hero .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .hero h1 {
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: -3.5px;
+    margin-top: 24px;
+  }
+  .hero-description {
+    font-size: 13px;
+    max-width: 380px;
+    margin-top: 22px;
+  }
+  .hero-actions {
+    margin-top: 24px;
+    gap: 22px;
+  }
+  .hero-actions .button {
+    font-size: 11px;
+    min-height: 49px;
+    padding-inline: 18px;
+  }
+  .hero-note {
+    font-size: 9px;
+    max-width: 340px;
+    margin-top: 23px;
+  }
+  .hero-visual {
+    height: 330px;
+    margin: 0 9px 0 0;
+  }
+  .hero-photo {
+    border-top-right-radius: 115px;
+    object-position: center;
+  }
+  .photo-caption {
+    bottom: 35px;
+    left: 13px;
+    padding: 12px 16px;
+    font-size: 10px;
+  }
+  .photo-index {
+    bottom: 14px;
+    right: 16px;
+    font-size: 6px;
+  }
+  .experience-badge {
+    width: 94px;
+    height: 94px;
+    right: -10px;
+    top: 19px;
+  }
+  .experience-badge strong {
+    font-size: 31px;
+  }
+  .experience-badge strong span {
+    font-size: 20px;
+  }
+  .benefits-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-block: 5px;
+  }
+  .benefits-inner > div,
+  .benefits-inner > div:first-child,
+  .benefits-inner > div:last-child {
+    justify-content: flex-start;
+    border-right: 0;
+    border-bottom: 1px solid #daddcf;
+    padding-block: 17px;
+    gap: 15px;
+  }
+  .benefits-inner > div:last-child {
+    border-bottom: 0;
+  }
+  .benefits-inner > div > span {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .benefits-inner strong {
+    font-size: 10px;
+  }
+  .benefits-inner span span {
+    font-size: 9px;
+    margin-top: 0;
+  }
+  .benefits-inner > div > .icon {
+    width: 23px;
+    height: 23px;
+  }
+  .section {
+    padding-block: 55px;
+  }
+  .section-heading {
+    display: block;
+  }
+  .section-heading > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .section-heading .eyebrow {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 39px;
+    letter-spacing: -1.5px;
+  }
+  .course-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 26px;
+  }
+  .transmission-toggle {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .transmission-toggle button {
+    flex: 1;
+    justify-content: center;
+    font-size: 11px;
+    padding: 12px 8px;
+  }
+  .course-toolbar > .text-link {
+    font-size: 10px;
+  }
+  .course-grid {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    gap: 18px;
+  }
+  .course-card {
+    padding: 25px;
+  }
+  .course-card-top {
+    margin-bottom: 20px;
+  }
+  .course-card h3 {
+    font-size: 27px;
+  }
+  .course-type {
+    font-size: 8px;
+  }
+  .course-label {
+    font-size: 7px;
+  }
+  .course-card .course-tagline {
+    font-size: 11px;
+  }
+  .course-description {
+    font-size: 12px;
+    min-height: 0;
+    max-width: 390px;
+    margin-bottom: 20px;
+  }
+  .course-duration strong {
+    font-size: 14px;
+  }
+  .course-duration span {
+    font-size: 10px;
+  }
+  .course-card li {
+    font-size: 11px;
+  }
+  .course-card ul {
+    gap: 12px;
+  }
+  .course-card .button {
+    font-size: 12px;
+    min-height: 49px;
+  }
+  .course-footnote {
+    align-items: flex-start;
+    text-align: left;
+    font-size: 9px;
+    margin-top: 20px;
+    padding-inline: 3px;
+  }
+  .course-footnote .icon {
+    margin-top: 2px;
+  }
+  .about-section {
+    padding-block: 48px;
+  }
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: stretch;
+  }
+  .about-visual {
+    padding: 0 15px 12px 0;
+  }
+  .about-visual > img {
+    height: 275px;
+    border-top-left-radius: 90px;
+  }
+  .about-stamp {
+    right: -2px;
+    bottom: 6px;
+    width: 109px;
+    height: 109px;
+    font-size: 8px;
+  }
+  .about-stamp em {
+    font-size: 21px;
+  }
+  .about-photo-note {
+    font-size: 6px;
+  }
+  .about-copy > .eyebrow {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .about-copy h2 {
+    font-size: 42px;
+  }
+  .about-copy > p:not(.eyebrow) {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .about-reasons {
+    gap: 22px;
+    margin-block: 26px;
+  }
+  .about-reasons strong {
+    font-size: 12px;
+  }
+  .about-reasons span {
+    font-size: 11px;
+  }
+  .about-copy .button {
+    font-size: 11px;
+    min-height: 48px;
+  }
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .steps-grid article {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 0 15px;
+  }
+  .step-number {
+    grid-row: 1/3;
+    width: 36px;
+    height: 36px;
+  }
+  .steps-grid h3 {
+    font-size: 18px;
+    margin: 0;
+    align-self: center;
+    min-height: 36px;
+  }
+  .steps-grid p {
+    grid-column: 2;
+    font-size: 12px;
+    max-width: 100%;
+    margin-top: 5px;
+  }
+  .other-services {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 40px;
+    padding: 25px 22px;
+  }
+  .other-services h3 {
+    font-size: 20px;
+  }
+  .services-links {
+    gap: 19px 25px;
+  }
+  .services-links a {
+    font-size: 10px;
+  }
+  .faq-section {
+    padding-block: 47px;
+  }
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .faq-grid > div > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .faq-list summary {
+    font-size: 12px;
+  }
+  .faq-list details > p {
+    font-size: 12px;
+    padding-right: 8px;
+  }
+  .contact-section {
+    padding-block: 48px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .contact-copy > .eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.2px;
+  }
+  .contact-copy h2 {
+    font-size: 51px;
+  }
+  .contact-copy > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .contact-actions {
+    gap: 18px;
+  }
+  .contact-actions .button {
+    font-size: 11px;
+    min-height: 50px;
+  }
+  .contact-phone {
+    font-size: 12px;
+  }
+  .contact-email {
+    font-size: 11px;
+  }
+  .location-card {
+    padding: 26px;
+  }
+  .location-heading {
+    font-size: 8px;
+  }
+  .location-card h3 {
+    font-size: 29px;
+  }
+  .location-card address {
+    font-size: 12px;
+  }
+  .opening-hours > span {
+    font-size: 11px;
+  }
+  .location-card > .text-link {
+    font-size: 11px;
+  }
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    padding-bottom: 24px;
+  }
+  .footer-brand {
+    gap: 8px;
+  }
+  .footer-brand img {
+    width: 68px;
+  }
+  .footer-brand span {
+    font-size: 10px;
+  }
+  .footer-main > div {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 10px;
+    gap: 8px;
+  }
+  .footer-bottom {
+    font-size: 8px;
+    gap: 15px;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    padding-bottom: 30px;
+  }
+  .footer-bottom > span:nth-child(2) {
+    margin-right: auto;
+  }
+  .footer-bottom > a {
+    display: none;
+  }
+  .floating-chat {
+    padding: 13px;
+    bottom: 17px;
+    right: 17px;
+  }
+  .floating-chat span {
+    display: none;
+  }
+  .floating-chat .icon {
+    width: 23px;
+    height: 23px;
+  }
+  .dialog-content {
+    padding: 30px 24px;
+  }
+  .dialog-content h2 {
+    font-size: 31px;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+  .brand > span {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 63px;
+  }
+  .hero-actions {
+    gap: 15px;
+  }
+  .hero-actions .button {
+    font-size: 10px;
+    min-height: 46px;
+    padding-inline: 13px;
+  }
+  .hero-actions .text-link {
+    font-size: 10px;
+  }
+  .hero-visual {
+    height: 290px;
+  }
+  .benefits-inner > div > span {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .benefits-inner strong {
+    font-size: 11px;
+  }
+  .benefits-inner span span {
+    font-size: 10px;
+  }
+  .contact-copy h2 {
+    font-size: 46px;
+  }
+  .services-links {
+    grid-template-columns: 1fr;
+  }
+  .contact-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .desktop-break {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .button:hover {
+    transform: none;
+  }
+}
