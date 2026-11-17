@@ -2,7 +2,7 @@
 
 Primera propuesta local de diseño y navegación para la [escuela de manejo AMA](https://www.amacuernavaca.com/), revisada el 12 de noviembre de 2026.
 
-Repositorio privado: [xisver/ama-cuernavaca](https://github.com/xisver/ama-cuernavaca).
+Repositorio: [xisver/ama-cuernavaca](https://github.com/xisver/ama-cuernavaca).
 
 La experiencia prioriza elegir un curso y contactar a la escuela. Conserva el logotipo y las fotografías del sitio de referencia y presenta una dirección visual en crema, verde oscuro y amarillo.
 
@@ -17,7 +17,7 @@ npm ci
 npm run dev
 ```
 
-Abre [http://127.0.0.1:3000/](http://127.0.0.1:3000/). El servidor funciona mientras la terminal permanezca abierta; `Ctrl+C` lo detiene.
+Abre [http://127.0.0.1:3000/ama-cuernavaca/](http://127.0.0.1:3000/ama-cuernavaca/). El servidor funciona mientras la terminal permanezca abierta; `Ctrl+C` lo detiene.
 
 Para generar y revisar la versión de producción:
 
@@ -27,6 +27,14 @@ npm run preview
 ```
 
 La compilación se escribe en `dist/`. `preview` sirve esa compilación en la dirección que imprime Vite; no publica el sitio en Internet.
+
+## Publicar en GitHub Pages
+
+La configuración está preparada en `vite.config.js` y `.github/workflows/deploy.yml`. En GitHub, abre **Settings → Pages → Build and deployment → Source** y selecciona **GitHub Actions**. Después sube los cambios a `main`; el workflow compilará `dist/` y lo publicará. Los siguientes pushes a `main` actualizarán el sitio.
+
+URL prevista: [https://xisver.github.io/ama-cuernavaca/](https://xisver.github.io/ama-cuernavaca/).
+
+Consulta los pasos completos y la solución de errores en [docs/DEPLOY_GITHUB_PAGES.md](docs/DEPLOY_GITHUB_PAGES.md). Esta preparación local no activa ni ejecuta un despliegue remoto.
 
 ## Qué incluye
 

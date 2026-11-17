@@ -9,13 +9,14 @@ import { icon } from "./icons.js";
 import { contact, courses, faqs, whatsappLink } from "./data.js";
 
 const external = 'target="_blank" rel="noopener noreferrer"';
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 const chat = (label, className = "button button-dark", message) =>
   `<a class="${className}" href="${whatsappLink(message)}" ${external}>${label}${icon("diagonal")}</a>`;
 
 document.querySelector("#app").innerHTML = `
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="AMA Cuernavaca, inicio"><img src="/images/logo-ama.png" width="134" height="56" alt="AMA" /><span>ESCUELA DE MANEJO<span>CUERNAVACA</span></span></a>
+      <a class="brand" href="#inicio" aria-label="AMA Cuernavaca, inicio"><img src="${asset("images/logo-ama.png")}" width="134" height="56" alt="AMA" /><span>ESCUELA DE MANEJO<span>CUERNAVACA</span></span></a>
       <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
         <a href="#cursos">Cursos de manejo</a><a href="#nosotros">Por qué AMA</a><a href="#como-empezar">Cómo empezar</a><a href="#contacto">Contacto</a>
         <a class="mobile-contact" href="${contact.telephone}">${icon("phone")}${contact.phone}</a>
@@ -35,7 +36,7 @@ document.querySelector("#app").innerHTML = `
         <div class="hero-note">${icon("heart")} Especialistas en personas nerviosas. Vas a estar en buenas manos.</div>
       </div>
       <div class="hero-visual">
-        <img class="hero-photo" src="/images/hero-driving.jpg" alt="Manos al volante de un automóvil durante la conducción" width="1280" height="600" fetchpriority="high" />
+        <img class="hero-photo" src="${asset("images/hero-driving.jpg")}" alt="Manos al volante de un automóvil durante la conducción" width="1280" height="600" fetchpriority="high" />
         <div class="experience-badge"><strong>30<span>+</span></strong><span>AÑOS ENSEÑANDO<br>A MANEJAR</span></div>
         <div class="photo-caption"><span class="caption-icon">${icon("wheel")}</span><span>Un nuevo camino.<br><strong>Una versión más segura de ti.</strong></span></div>
         <span class="photo-index">AMA · CUERNAVACA, MORELOS</span>
@@ -56,7 +57,7 @@ document.querySelector("#app").innerHTML = `
     </section>
 
     <section class="about-section" id="nosotros" aria-labelledby="about-title"><div class="container about-grid">
-      <div class="about-visual"><img src="/images/pista-ama.jpg" alt="Automóvil negro y amarillo de la escuela de manejo AMA" width="545" height="329" loading="lazy" /><div class="about-photo-note">${icon("pin")} APRENDE EN CUERNAVACA. CONDUCE MÁS LEJOS.</div><span class="about-stamp">DESPACIO<br><em>también</em><br>SE LLEGA.</span></div>
+      <div class="about-visual"><img src="${asset("images/pista-ama.jpg")}" alt="Automóvil negro y amarillo de la escuela de manejo AMA" width="545" height="329" loading="lazy" /><div class="about-photo-note">${icon("pin")} APRENDE EN CUERNAVACA. CONDUCE MÁS LEJOS.</div><span class="about-stamp">DESPACIO<br><em>también</em><br>SE LLEGA.</span></div>
       <div class="about-copy"><p class="eyebrow">02 / AQUÍ, LA CONFIANZA VA PRIMERO</p><h2 id="about-title">Primero tú.<br><em>Después, el camino.</em></h2><p>Sabemos que aprender a manejar es un gran paso. Por eso, en AMA la paciencia y el acompañamiento son parte de cada clase.</p><div class="about-reasons">
         <div>${icon("heart")}<span><strong>Paciencia para tus primeros pasos</strong>Atención especializada si sientes nervios al manejar.</span></div>
         <div>${icon("shield")}<span><strong>Seguridad en cada práctica</strong>Vehículos con doble control e instructores capacitados.</span></div>
@@ -96,7 +97,7 @@ document.querySelector("#app").innerHTML = `
 
     <section class="contact-section" id="contacto" aria-labelledby="contact-title"><div class="container contact-grid"><div class="contact-copy"><p class="eyebrow">04 / AQUÍ EMPIEZA TU INDEPENDENCIA</p><h2 id="contact-title">El primer paso<br>es <em>hablarlo.</em></h2><p>Pregunta sin compromiso. Te ayudamos a encontrar<br class="desktop-break"> el curso y el horario ideales para ti.</p><div class="contact-actions">${chat(`${icon("whatsapp")} Escríbenos por WhatsApp`)}<a class="contact-phone" href="${contact.telephone}">${icon("phone")}${contact.phone}</a></div><a class="contact-email" href="mailto:${contact.email}">${contact.email}${icon("diagonal")}</a></div><div class="location-card"><div class="location-heading">${icon("pin")}<span>VEN A CONOCERNOS</span></div><h3>Nos vemos en<br>Tlaltenango.</h3><address>Emiliano Zapata 218, Tlaltenango<br>Cuernavaca, Morelos · C.P. 62170</address><div class="opening-hours"><span>Lunes a viernes<strong>9:00 – 18:30</strong></span><span>Sábados<strong>9:00 – 15:00</strong></span><span>Domingos<strong>Cerrado</strong></span></div><a class="text-link" href="${contact.map}" ${external}>Cómo llegar ${icon("diagonal")}</a></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-main"><a href="#inicio" class="footer-brand" aria-label="AMA, volver al inicio"><img src="/images/logo-ama.png" width="134" height="56" alt="AMA" /><span>Tu libertad empieza al volante.</span></a><div><a href="#cursos">Cursos</a><a href="#nosotros">Por qué AMA</a><a href="#contacto">Contacto</a><a href="https://www.facebook.com/AMACuerna/" ${external}>Facebook ${icon("diagonal")}</a></div></div><div class="container footer-bottom"><span>© ${new Date().getFullYear()} AMA Cuernavaca.</span><span>Propuesta de diseño · Versión 01</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+  <footer class="site-footer"><div class="container footer-main"><a href="#inicio" class="footer-brand" aria-label="AMA, volver al inicio"><img src="${asset("images/logo-ama.png")}" width="134" height="56" alt="AMA" /><span>Tu libertad empieza al volante.</span></a><div><a href="#cursos">Cursos</a><a href="#nosotros">Por qué AMA</a><a href="#contacto">Contacto</a><a href="https://www.facebook.com/AMACuerna/" ${external}>Facebook ${icon("diagonal")}</a></div></div><div class="container footer-bottom"><span>© ${new Date().getFullYear()} AMA Cuernavaca.</span><span>Propuesta de diseño · Versión 01</span><a href="#inicio">Volver arriba ↑</a></div></footer>
   <a class="floating-chat" href="${whatsappLink()}" ${external} aria-label="Consultar cursos por WhatsApp (abre en otra pestaña)">${icon("whatsapp")}<span>¿Te ayudamos?</span></a>
 
   <dialog id="course-advisor" aria-labelledby="advisor-title"><div class="dialog-content"><button class="dialog-close" type="button" aria-label="Cerrar orientación de cursos">${icon("close")}</button><p class="eyebrow">ENCUENTRA TU PUNTO DE PARTIDA</p><h2 id="advisor-title">Un curso <em>a tu medida.</em></h2><p>Dos preguntas para orientarte. AMA confirmará contigo los detalles y la disponibilidad.</p><form id="advisor-form"><label for="experience">¿Qué experiencia tienes?</label><select id="experience" name="experience"><option value="new">Quiero aprender desde cero</option><option value="experienced">Ya manejo y quiero reforzar mis habilidades</option></select><label for="availability">¿Cuándo te gustaría practicar?</label><select id="availability" name="availability"><option value="week">Entre semana</option><option value="weekend">El fin de semana</option></select><button class="button button-dark" type="submit">Ver mi orientación ${icon("arrow")}</button></form><div id="advisor-result" role="status" hidden></div></div></dialog>
